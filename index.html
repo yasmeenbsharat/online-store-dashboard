@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Mary's simple recipe for maple bacon donuts
+            makes a sticky, sweet treat with just a hint
+            of salt that you'll keep coming back for."
+  />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome   -->
+    <link rel="stylesheet" href="/vendor/css/all.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Online Store</title>
+</head>
+<body>
+    <!-- start Navbar section -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success p-2 ">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="logo col-md-3 ms-2"><a class="navbar-brand text-capitalize fs-3 text-light" href="#">online store dashboard</a></div>
+          
+      <div class="col-md-9  text-end mt-2">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex w-50 ms-auto" role="search">
+        <input class="form-control me-2 ms-auto" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success bg-light" type="submit">Search</button>
+      </form>
+      </div></div>
+        </div>
+      </nav>
+     <!-- end Navbar section -->
+
+      <section class="dashboard row">
+        <div class="col-md-3">
+           <!-- Sidebar -->
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white  ">
+                <div class="position-sticky">
+                <div class="list-group list-group-flush mx-3 mt-4 ">
+                    <a
+                    href="#"
+                    class="list-group-item list-group-item-action py-2 ripple bg-success text-light fs-4 rounded-1"
+                    aria-current="true"
+                    onclick="getProductsOfCategory('All')"
+                    >
+                    <i class="fas fa-tachometer-alt fa-fw me-3 "></i><span>Main dashboard</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action py-2 ripple text-success"  onclick="getProductsOfCategory('All')">
+                    <i class="fa-solid fa-clipboard-list fa-fw me-3 "></i><span>Products</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action py-3 ripple text-success " onclick="getAllCarts()"
+                    ><i class="fa-solid fa-cart-shopping fa-fw me-3 "></i><span>Carts</span></a
+                    >
+                    <a href="#" class="list-group-item list-group-item-action py-3 ripple text-success"
+                    ><i class="fas fa-chart-bar fa-fw me-3 " ></i><span>Categories</span></a
+                    >
+                    <a href="#" class="list-group-item list-group-item-action py-3 ripple text-success"
+                    ><i class="fas fa-users fa-fw me-3 "></i><span>Customers</span></a
+                    >
+                    <a href="#" class="list-group-item list-group-item-action py-3 ripple text-success"
+                    ><i class="fas fa-chart-line fa-fw me-3 "></i><span>integration</span></a
+                    >
+                </div>
+                </div>
+            </nav>
+  <!-- Sidebar -->
+
+        </div>
+        <div class="col-md-9 mt-4" id="pageContent">
+
+
+
+
+            <!-- <div class="input-group mb-3  ">
+                <button class="btn bg-success p-2 ms-auto me-3 text-light" type="button" id="button-addon2">Add Products</button>
+              </div>
+              <div
+              class="Products row justify-content-center me-2 g-5"
+              
+            >
+            <table class="table table-success  table-striped  ">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product Title</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Category</th>	
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>	
+                  </tr>
+            </thead>
+            <tbody id="ProductsOfCategory">
+              
+            </tbody>
+              <div class="pagination justify-content-center" id="pagination">
+
+              </div>
+
+            </table>
+
+        
+        
+        
+        </div> -->
+            
+        </div>
+
+      </section>
+     
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.all.min.js"
+      integrity="sha512-4tvE14sHIcdIHl/dUdMHp733PI6MpYA7BDnDfndQmx7aIovEkW+LfkonVO9+NPWP1jYzmrqXJMIT2tECv1TsEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> 
+      <script src="assets/js/main.js" defer></script>
+</body>
+</html>
